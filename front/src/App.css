@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background:rgb(58, 0, 0);
+  min-width: 50em;
+  color: white;
+  
+}
+.Contenedor {
+  width: 100%;
+  height: 100%;
+  
+}
+/* UTILIZADAS EN TODO EL PROYECTO */
+
+.componente {
+  background:linear-gradient(180deg , rgb(153, 0, 0) , rgb(58, 0, 0));
+  border: none;
+  padding: 2em;
+  height: 100%;
+}
+
+.LinkP{
+  color: white;
+  
+}
+.textoBlanco {
+  color: white;
+  text-decoration: none;
+}
+/* ENCABEZADO */
+
+header {
+  background:linear-gradient(180deg , black , rgb(56, 56, 56)) ;
+  color: white;
+  width:100%;
+  border: 2px #282c34 solid;
+  padding: 1em;
+}
+header h1 {
+  padding: .5em;
+}
+header .links {
+  text-decoration: none;
+  padding: 10px;
+  float: right;
+  color: gray
+}
+
+header div a.active {
+  color: white;
+  border: rgb(255, 0, 0) solid 1px;
+  box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+
+
+/* PAGINA PRINCIPAL */
+
+.Principal p{
+  color: white;
+  margin-top: 2em;
+}
+
+
+/* LISTADO */
+
+tr {
+  margin-top:1em;
+}
+
+table {
+  color: white;
+}
+
+.NombresColumnas{
+  border-bottom: gray solid 1px;
+  margin-top: 2em;
+  
+  display: grid;
+  grid-template-columns: 14em 14em 14em;
+    
+}
+
+.DatosDisco{
+  display: grid;
+  grid-template-columns: 14em 14em 14em 8em;
+}
+
+/* AGREGAR UN DISCO */
+
+form {
+  margin-top: 2em;
+  border-radius: 2em;
+  box-shadow: 0px 0px 30px#61dafb;
+  width: min-content;
+  padding: 2em;
+  display: grid;
+  grid-template-rows: 2em 2em 2em 3.5em;
+  }
+ 
+.Label-Input {
+  display: grid;
+  grid-template-columns: 10em 10em 10em;
+}
+input {
+margin: .2em;
+
+}
+label {
+  color: white
+}
+form button {
+  margin-top: 1em;
+  background-color: #a5a5a5;
+}
+
+/* DESCRIPCIÓN DE DISCO */
+
+.DescripcionDisco {
+  border: 1px solid lightblue;
+  background: linear-gradient(180deg , rgb(141, 4, 4) , rgba(121, 1, 1, 0.171) ) ;
+  box-shadow: 0px 0px 10px lightblue;
+  border-radius: 1em;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 2em;
+  color: white;
+
+}
+
+/* DISCOS COMPRADOS */
+
+.FichaDiscoComprado {
+  background: linear-gradient(90deg , rgb(141, 70, 4) , rgba(51, 31, 1, 0.171) ) ;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 1em;
+  width:20em;
+  height: 10em;
+  color: white;
+  margin: 2em;
+}
+.ContenedorFichas{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sinComprados {
+  margin-top:2em;
+  margin-bottom: 2em;
+  color: white;
+}
